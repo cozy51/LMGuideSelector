@@ -1,0 +1,2 @@
+import type { Conditions } from './types';
+export const defaultConditions:Conditions={orientation:'horizontal',masses:[{id:'mass-1',name:'テーブル＋ワーク',massKg:200,positionMm:{x:30,y:250,z:40}}],layout:{railCount:2,blocksPerRail:2,railSpanMm:300,blockSpanMm:240,railLengthMm:1000,strokeMm:600},drive:{type:'ballscrew',mode:'automatic',forceN:0,positionMm:{x:0,y:40,z:0}},motion:{maxSpeedMmS:800,accelMode:'time',accelTimeS:0.5,decelTimeS:0.5,accelerationMS2:1.6,decelerationMS2:1.6,cyclesPerMin:6,hoursPerDay:16,daysPerYear:250},loadFactor:1.3,requiredSafety:3,desiredLifeHours:30000};

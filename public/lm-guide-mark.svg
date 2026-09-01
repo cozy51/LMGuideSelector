@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">LM Guide Engineering Studio</title>
+  <desc id="desc">2本のLMガイドレール、4つのブロック、中央の荷重点を表すシンボル</desc>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="7" x2="57" y2="59" gradientUnits="userSpaceOnUse"><stop stop-color="#123d49"/><stop offset="1" stop-color="#092630"/></linearGradient>
+    <linearGradient id="rail" x1="10" y1="0" x2="54" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#65d7df"/><stop offset="1" stop-color="#16a8b5"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" stroke="#63d2da" stroke-width="2"/>
+  <path d="M12 21h40M12 43h40" fill="none" stroke="url(#rail)" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#e9f7f8" stroke="#0c8793" stroke-width="2"><rect x="13" y="15" width="13" height="12" rx="3"/><rect x="38" y="15" width="13" height="12" rx="3"/><rect x="13" y="37" width="13" height="12" rx="3"/><rect x="38" y="37" width="13" height="12" rx="3"/></g>
+  <path d="M32 24l7 8-7 8-7-8z" fill="#f2ad3b" stroke="#ffd477" stroke-width="1.5"/><circle cx="32" cy="32" r="2.3" fill="#102f39"/>
+  <path d="M48 11h7v7" fill="none" stroke="#f2ad3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

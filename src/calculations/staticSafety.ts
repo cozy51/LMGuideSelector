@@ -1,0 +1,1 @@
+export const calculateStaticSafety=(C0N:number,pMaxN:number)=>C0N>0&&pMaxN>0?C0N/pMaxN:0;

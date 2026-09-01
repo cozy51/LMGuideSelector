@@ -1,0 +1,8 @@
+import data from './sample-products.json'; import type { Product } from '../models/types';
+export const sampleProducts=data as Product[];
+export const productCsvColumns=['manufacturer','series','model','size','rollingElement','loadType','C_N','C0_N','blockWidthMm','blockHeightMm','blockLengthMm','railWidthMm','massKg','officialUrl','dataSource','verifiedDate','dataQuality'];
+export function parseProductCsv(csv:string):Product[]{
+ const lines=csv.replace(/^\uFEFF/,'').split(/\r?\n/).filter(Boolean);if(lines.length<2)return[];const h=lines[0].split(',').map(x=>x.trim());
+ return lines.slice(1).map(line=>{const v=line.split(',').map(x=>x.trim());const r=Object.fromEntries(h.map((k,i)=>[k,v[i]??'']));return {...r,C_N:Number(r.C_N),C0_N:Number(r.C0_N),blockWidthMm:Number(r.blockWidthMm),blockHeightMm:Number(r.blockHeightMm),blockLengthMm:Number(r.blockLengthMm),railWidthMm:Number(r.railWidthMm),massKg:Number(r.massKg),rollingElement:r.rollingElement==='roller'?'roller':'ball',radialFactor:Number(r.radialFactor||1),reverseRadialFactor:Number(r.reverseRadialFactor||1),lateralFactor:Number(r.lateralFactor||1),accuracyGrades:(r.accuracyGrades||'').split('|').filter(Boolean),preloadClasses:(r.preloadClasses||'').split('|').filter(Boolean),options:(r.options||'').split('|').filter(Boolean),dataQuality:(r.dataQuality||'unverified')} as Product;}).filter(p=>p.model&&p.C_N>0&&p.C0_N>0);
+}
+export const csvTemplate=productCsvColumns.join(',')+'\nSAMPLE,TEST,MODEL,20,ball,4方向等荷重タイプ,10000,15000,40,30,60,20,0.4,,,YYYY-MM-DD,unverified\n';
