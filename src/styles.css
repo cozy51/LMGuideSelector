@@ -137,6 +137,8 @@ label>span{font-size:14px;line-height:1.4;margin-bottom:6px}
 .orthographic-grid marker path{fill:var(--muted)}
 .orthographic-grid .mount-plane{stroke:var(--text);stroke-width:2}
 .orthographic-grid .datum-line{stroke:var(--muted);stroke-width:1;stroke-dasharray:5 4}
+.diagram>svg .datum-line{stroke:var(--muted);stroke-width:1;stroke-dasharray:5 4}
+.diagram>svg .datum-label{fill:var(--muted);font-size:12px}
 .orthographic-grid .ortho-guide rect{fill:var(--panel2);stroke:var(--accent);stroke-width:1.5}
 .orthographic-grid .ortho-guide path{fill:none;stroke:var(--muted);stroke-width:1.5}
 .orthographic-grid .ortho-dimension{stroke:var(--muted);stroke-width:1.2}
@@ -151,10 +153,11 @@ label>span{font-size:14px;line-height:1.4;margin-bottom:6px}
 .orthographic-grid .bs-view .ortho-guide text{fill:var(--bs-color);font-size:14px;font-weight:700}
 .orthographic-grid .ortho-cog circle{fill:#f0b331;stroke:#8c6200;stroke-width:1.5}
 .orthographic-grid .ortho-cog path{stroke:#6e4d00;stroke-width:1.5}
-.orthographic-grid .ortho-cog text{fill:#8c6200;font-weight:700}
 .orthographic-grid .ortho-drive circle:first-child{fill:color-mix(in srgb,var(--accent) 18%,var(--panel));stroke:var(--accent);stroke-width:2}
 .orthographic-grid .ortho-drive circle:nth-child(2){fill:var(--accent)}
-.orthographic-grid .ortho-drive text{fill:var(--accent2);font-weight:700}
+.orthographic-grid .point-label{font-size:12px;font-weight:700}
+.orthographic-grid .point-label.cog-label{fill:#8c6200}
+.orthographic-grid .point-label.drive-label{fill:var(--accent2)}
 .orthographic-grid .point-value{font-size:12px;fill:#8c6200;font-weight:600}
 .orthographic-grid .point-value.drive-value{fill:var(--accent2)}
 .orthographic-grid .ortho-axis line{stroke:var(--accent);stroke-width:1.5}
