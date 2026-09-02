@@ -82,8 +82,8 @@ label>span{font-size:14px;line-height:1.4;margin-bottom:6px}
 .eyebrow{font-size:14px;line-height:1.4}
 .status{font-size:14px}
 .view-title{font-size:15px}
-.view-title span{color:var(--muted);font-weight:500}
-.diagram-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:5px}
+.view-note{color:var(--muted);font-weight:500;font-size:14px}
+.diagram-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px;padding:10px;background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--accent)}
 .gravity-guide{display:flex;align-items:center;gap:13px;margin:10px 0 0;padding:10px 14px;border:1px solid color-mix(in srgb,var(--accent) 48%,var(--line));border-bottom:4px solid var(--accent);border-radius:6px 6px 0 0;background:color-mix(in srgb,var(--accent) 8%,var(--panel));color:var(--text)}
 .gravity-guide-arrow{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:var(--accent);color:#fff;font-size:28px;font-weight:700;line-height:1}
 .gravity-guide b,.gravity-guide span{display:block}
